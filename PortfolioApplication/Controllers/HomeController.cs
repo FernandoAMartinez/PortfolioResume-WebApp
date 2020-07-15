@@ -20,10 +20,14 @@ namespace PortfolioApplication.Controllers
 
         #region Views
         public IActionResult Index() => View();
-
         [Route("/{action}")]
         public IActionResult Privacy() => View();
-        
+        [Route("/{action}")]
+        public IActionResult Projects() => View();
+        [Route("/{action}")]
+        public IActionResult About() => View();
+        [Route("/{action}")]
+        public IActionResult Contact() => View();
         #endregion
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
