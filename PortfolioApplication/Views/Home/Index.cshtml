@@ -1,35 +1,248 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
+    Layout = "~/Views/Shared/_LayoutUI.cshtml";
 }
 
 @*<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>*@
+        <h1 class="display-4">Welcome</h1>
+        <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    </div>*@
 
 @*<div class="jumbotron text-center p-3 my-3 bg-dark text-white">*@
-<div class="container bg-dark text-lg-center p-3 my-3 text-white">
-    <div class="col-sm-6">
-        <img src="https://avatars3.githubusercontent.com/u/39782229?s=460&u=e7962ddc792d6c3930b09e84b5198a1d93eb82e4&v=4"
-             class="rounded-circle float-left img-thumbnail img-fluid"
-             style="width:150px" />
+@*<style>
+        .bg-image {
+            background-image: url(https://images.unsplash.com/photo-1593412343062-5f8a0950b52f?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1080&ixlib=rb-1.2.1&q=80&w=1920)
+        }
+    </style>*@
+
+@*<div class="container bg-dark text-lg-center p-3 my-3 text-white">*@
+@*<div class="bg-image container text-lg-center p-3 my-3 text-dark font-weight-bold">
+        <div class="col-sm-6">
+            <img src="https://avatars3.githubusercontent.com/u/39782229?s=460&u=e7962ddc792d6c3930b09e84b5198a1d93eb82e4&v=4"
+                 class="rounded-circle img-thumbnail img-fluid"
+                 style="width:150px" />
+        </div>
+        <h1>Fernando Martinez</h1>
+        <p>SAP IS-U Consultant at Accenture Argentina</p>
     </div>
-    <h1>Fernando Martinez</h1>
-    <p>SAP IS-U Consultant at Accenture Argentina</p>
-</div>
-<div class="container p-3 my-3 border text-center">
-    <div class="row">
-        <div class="col-sm-4">
-            <p>Developer Skills</p>
-        </div>
 
-        <div class="col-sm-4">
-            <p>Professional Experience</p>
-        </div>
+    <div class="container p-3 my-3 border text-center h-auto">
+        <div class="row">
+            <div class="col-sm-4">
+                <h3><p>Developer Skills</p></h3>
+                <ul>
+                    <li> C# NET Core & NET Framework </li>
+                    <li> MS SQL Server </li>
+                </ul>
+            </div>
 
-        <div class="col-sm-4">
-            <p>Hobbies</p>
-        </div>
+            <div class="col-sm-4">
+                <h3><p>Professional Experience</p></h3>
+                <ul>
+                    <li> 2016 - Actual SAP IS-U Consultant at Accenture Argentina </li>
+                </ul>
+            </div>
 
+            <div class="col-sm-4">
+                <h3><p>Hobbies</p></h3>
+                <ul>
+                    <li> Photography </li>
+                </ul>
+            </div>
+        </div>
+    </div>*@
+
+<!-- slider_area_start -->
+<div class="slider_area">
+    <div class="single_slider  d-flex align-items-center slider_bg_1">
+        <div class="container">
+            <div class="row align-items-center position-relative">
+                <div class="col-lg-9">
+                    <div class="slider_text">
+                        <h3>
+                            Hi there, I am Fernando<br>
+                            <span>Frelance Developer</span>
+                        </h3>
+                        <a class="boxed-btn3-line" href="#">View Works</a>
+                    </div>
+                </div>
+                <div class="my_img d-none d-lg-block">
+                    <img src="img/about/my_img.png" alt="">
+                </div>
+            </div>
+        </div>
     </div>
 </div>
+<!-- slider_area_end -->
+
+<!-- download_area_start-->
+<div class="download_area">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-10">
+                <div class="download_text">
+                    <h3>I’m a Freelance Software Developer based on Buenos Aires, Argentina. I like to lead each project focusing on quality and performance</h3>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-md-6">
+                <div class="download_left">
+                    <p>
+                        Proin laoreet elementum ligula, ac tincidunt lorem accumsan nec. Fusce eget urna ante. Donec massa velit, varius a accumsan ac, tempor iaculis massa. Sed placerat justo sed libero varius vulputate. Ut a mi tempus massa malesuada fermentum.
+                    </p>
+                    <p>Sed eleifend sed nibh nec fringilla. Donec eu cursus sem, vitae tristique ante. Cras pretium rutrum egestas. Integer ultrices libero sed justo vehicula, eget </p>
+                    <a href="#" class="boxed-btn3-line">Download CV</a>
+                </div>
+            </div>
+            <!-- Progress Skils -->
+            <div class="col-lg-5 offset-lg-1 col-md-6">
+                <div class="progress_skills">
+                    <div class="single_progress">
+                        <div class="label d-flex justify-content-between">
+                            <span>C# NET Core Development</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar " role="progressbar" style="width: 90%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="single_progress">
+                        <div class="label d-flex justify-content-between">
+                            <span>UI/UX</span>
+                            <span>45%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar " role="progressbar" style="width: 70%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="single_progress">
+                        <div class="label d-flex justify-content-between">
+                            <span>API's Development</span>
+                            <span>55%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 45%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- download_area_end -->
+
+<!-- service_area start  -->
+<div class="service_area">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="section_title mb-50">
+                    <h3>My Services</h3>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="single_service text-center">
+                    <div class="icon">
+                        <img src="img/svg_icon/1.svg" alt="">
+                    </div>
+                    <h3>
+                        Mobile Apps
+                    </h3>
+                    <p>With Xamarin Forms I'll develop an entire Mobile Solution for you, ready to use in iOS & Android.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="single_service text-center">
+                    <div class="icon">
+                        <img src="img/svg_icon/2.svg" alt="">
+                    </div>
+                    <h3>
+                        Web Development
+                    </h3>
+                    <p>Using NET Core you'll have a great Web Experience.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="single_service text-center">
+                    <div class="icon">
+                        <img src="img/svg_icon/3.svg" alt="">
+                    </div>
+                    <h3>
+                        E-commerce
+                    </h3>
+                    <p>Enhace your sales using our E-Commerce solution, just paying for what you need.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- service_area end  -->
+<!-- gallery_area start  -->
+<div class="gallery_area">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="section_title mb-50">
+                    <h3>My Works</h3>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-xl-10 col-lg-10">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <div class="single_gallery">
+                            <div class="thumb">
+                                <img src="img/gallery/1.png" alt="">
+                            </div>
+                            <div class="gallery_heading">
+                                <span>Mobile App</span>
+                                <a href="works_details.html"><h4>Colorlib App Project</h4></a>
+                            </div>
+                        </div>
+                        <div class="single_gallery">
+                            <div class="thumb">
+                                <img src="img/gallery/2.png" alt="">
+                            </div>
+                            <div class="gallery_heading">
+                                <span>Mobile App</span>
+                                <a href="works_details.html"><h4>Colorlib App Project</h4></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <div class="single_gallery">
+                            <div class="thumb">
+                                <img src="img/gallery/3.png" alt="">
+                            </div>
+                            <div class="gallery_heading">
+                                <span>Mobile App</span>
+                                <a href="works_details.html"><h4>Colorlib App Project</h4></a>
+                            </div>
+                        </div>
+                        <div class="single_gallery">
+                            <div class="thumb">
+                                <img src="img/gallery/4.png" alt="">
+                            </div>
+                            <div class="gallery_heading">
+                                <span>Mobile App</span>
+                                <a href="works_details.html"><h4>Colorlib App Project</h4></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="more_works">
+                            <a class="boxed-btn3-line" href="#">More Works</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- gallery_area end  -->
