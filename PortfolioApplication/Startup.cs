@@ -20,6 +20,9 @@ namespace PortfolioApplication
         {
             services.AddControllersWithViews();
             services.AddRazorPages().AddRazorRuntimeCompilation();
+
+            services.AddMvc();
+            services.AddDefaultAWSOptions(Configuration.GetAWSOptions());
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
