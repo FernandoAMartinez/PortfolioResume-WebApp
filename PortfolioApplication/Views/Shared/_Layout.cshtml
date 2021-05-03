@@ -4,64 +4,97 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Portfolio Web App</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
 </head>
-<body>
+<body class="bg-light">
     <header>
-        @*<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">*@
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark border-bottom box-shadow mb-3">
-            <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Fernando Martinez</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
+        <div class="fixed-top shadow-lg m-3 rounded-pill bg-primary bg-gradient">
+            <nav class="navbar navbar-expand-md navbar-toggleable-sm navbar-dark text-dark box-shadow">
+                <div class="container-fluid">
+                    <a class="navbar-brand p-2" asp-area="" asp-controller="Home" asp-action="Index">Portfolio</a>
+                    <button class="navbar-toggler rounded-circle border-white p-2" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-                        <li class="nav-item">
-                            <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Projects">Projects</a>
-                        </li>
+                    <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                        <ul class="flex-row navbar-nav flex-grow-1">
+                            <li class="nav-item">
+                                <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="About">About</a>
-                        </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Projects">Projects</a>
+                            </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Contact">Contact</a>
-                        </li>
-                        @*<li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                            </li>*@
-                    </ul>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="About">About</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
+
+            </nav>
+        </div>
     </header>
+    <div class="container mt-3 pt-5">
+        <div class="w-100 h-25"></div>
+        <div class="row pt-3">
+            @*<div class="pt-3">
+                    @RenderBody()
+                </div>*@
 
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
+            <div class="col-sm-4 align-self-center">
+                <div class="container-fluid">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://avatars3.githubusercontent.com/u/39782229?s=460&u=e7962ddc792d6c3930b09e84b5198a1d93eb82e4&v=4" class="card-img-top" alt="...">
+                        <div class="card-body justify-content-center">
+                            <h5 class="card-title">Fernando Martinez</h5>
+                            <p class="card-text">
+                                <ul class="list-group">
+                                    <li class="list-group-item">.NET FullStack Developer</li>
+                                    <li class="list-group-item">Python Developer</li>
+                                    <li class="list-group-item">SQL Database</li>
+                                </ul>
+                            </p>
+                            <div class="btn-group justify-content-center">
+                                <a href="https://www.github.com/FernandoAMartinez" class="btn btn-primary">Github</a>
+                                <a href="" class="btn btn-primary">Linked In</a>
+                                <a href="" class="btn btn-primary">Email</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-        <div class="alert alert-info">
-            <strong>Site in progress!</strong> I'm still developing this site, hope finish it soon!
+            </div>
+            <div class="col-sm-8">
+                @RenderBody()
+            </div>
+
+            <div class="alert alert-info m-3">
+                <strong>Site in progress!</strong> I'm still developing this site, hope finish it soon!
+            </div>
+
         </div>
     </div>
-
     <!-- Alerts -->
 
-    <footer class="border-top footer text-muted">
+    <footer class="footer text-muted fixed-bottom">
         <div class="container text-center">
-            &copy; @DateTime.Now.Year - Fernando Martinez @*- <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>*@
+            &copy; @DateTime.Now.Year - Fernando Martinez
         </div>
     </footer>
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @RenderSection("Scripts", required: false)
 </body>
